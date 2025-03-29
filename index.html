@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SynthData.ai</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #0a0f1a;
+      color: white;
+    }
+    a { color: inherit; text-decoration: none; }
+    header, section, footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: #00f0ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(rgba(10,15,26,0.7), rgba(10,15,26,0.7)), url('images/hero_wireframe.jpg') center/cover no-repeat;
+      text-align: center;
+      padding: 6rem 2rem;
+      border-radius: 12px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #d1d5db;
+    }
+    .cta-main {
+      background: #00f0ff;
+      color: #0a0f1a;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .badge {
+      background: #1f2937;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .pillar {
+      background: #1f2937;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .pillar:hover {
+      transform: translateY(-4px);
+    }
+    .pillar-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #00f0ff;
+    }
+    .card {
+      background: #1f2937;
+      border-radius: 10px;
+      width: 320px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      color: #00f0ff;
+      margin-bottom: 0.5rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><strong>SYNTHDATA.AI</strong></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pillars">Applications</a>
+      <a href="#use-cases">Use Cases</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Real-Time Synthetic Data for Critical Environments</h1>
+    <p>Photoreal 3D data and proprietary ML pipelines for behavior analysis, robotics, and public safety environments.</p>
+    <a href="#pillars" class="cta-main">Explore Solutions</a>
+  </section>
+
+  <section id="features" class="badges">
+    <div class="badge">⚡ Real-Time</div>
+    <div class="badge">🧠 Proprietary ML</div>
+    <div class="badge">🎯 Enterprise-Ready</div>
+    <div class="badge">🌍 Photorealism</div>
+  </section>
+
+  <section id="pillars" class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">🏢</div>
+      <h3>Enterprise</h3>
+      <p>High-throughput data workflows for scaling internal ML pipelines securely.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">👮</div>
+      <h3>Police</h3>
+      <p>Real-time behavioral tracking, identification, and anomaly detection.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🛡️</div>
+      <h3>Defense</h3>
+      <p>Military-grade synthetic training for real-world edge cases.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🤖</div>
+      <h3>Robotics</h3>
+      <p>Robust motion and spatial datasets to train autonomous agents.</p>
+    </div>
+  </section>
+
+  <section id="use-cases">
+    <h2 style="text-align:center; margin-top:3rem;">Use Cases</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/airport_security.jpg" alt="Airport Security" />
+        <div class="card-content">
+          <h3>Airport Security</h3>
+          <p>Detecting abnormal behavior through full-body tracking.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/crowd_monitoring.jpg" alt="Crowd Monitoring" />
+        <div class="card-content">
+          <h3>Stadium Monitoring</h3>
+          <p>High-fidelity crowd tracking and behavioral insight.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/robotics_training.jpg" alt="Robotics Training" />
+        <div class="card-content">
+          <h3>Robotics Training</h3>
+          <p>Photoreal synthetic datasets for precision robotics and automation systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 SynthData.net — contact@synthdata.net
+  </footer>
+</body>
+</html>
