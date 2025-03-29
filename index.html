@@ -1,87 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>SynthData.ai</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet' />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background: linear-gradient(to bottom right, #0a0f1a, #111827); color: white; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 3rem; background-color: rgba(0, 0, 0, 0.2); }
-    .logo { font-size: 1.5rem; font-weight: 700; color: #00f0ff; }
-    nav a { color: white; margin-left: 2rem; text-decoration: none; font-weight: 500; }
-    .cta { background: #00f0ff; padding: 0.5rem 1rem; border-radius: 6px; color: #0a0f1a; font-weight: 600; text-decoration: none; }
-
-    .hero { display: flex; align-items: center; justify-content: space-between; padding: 4rem 3rem; background: url('https://via.placeholder.com/600x400/0a0f1a/ffffff?text=Wireframe+Hero') no-repeat right center; background-size: contain; }
-    .hero-text { max-width: 600px; }
-    .hero h1 { font-size: 3rem; line-height: 1.2; margin-bottom: 1rem; }
-    .hero p { font-size: 1.125rem; margin-bottom: 2rem; color: #d1d5db; }
-    .hero .cta-main { background: #00f0ff; padding: 0.75rem 1.5rem; color: #0a0f1a; font-weight: 700; border-radius: 6px; text-decoration: none; font-size: 1rem; }
-
-    .features { display: flex; justify-content: center; gap: 2rem; padding: 2rem 3rem; }
-    .features span { background: rgba(255,255,255,0.1); padding: 0.75rem 1rem; border-radius: 5px; font-size: 0.9rem; }
-
-    .use-cases { display: flex; gap: 2rem; padding: 3rem; justify-content: center; flex-wrap: wrap; }
-    .card { background: #1f2937; border-radius: 10px; overflow: hidden; width: 300px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
+    body { font-family: 'Inter', sans-serif; background: #0a0f1a; color: white; margin: 0; padding: 0; }
+    header, section, footer { padding: 2rem; max-width: 1000px; margin: auto; }
+    header { display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: 2rem; color: #00f0ff; text-decoration: none; font-weight: bold; }
+    .hero h1 { font-size: 2.5rem; }
+    .features span, .cta-main, .card { display: inline-block; margin: 1rem 0.5rem; padding: 1rem; background: #1f2937; border-radius: 10px; }
+    .card img { width: 100%; border-radius: 10px 10px 0 0; }
     .card-content { padding: 1rem; }
-    .card h3 { margin-bottom: 0.5rem; color: #00f0ff; }
-    .card p { font-size: 0.95rem; color: #d1d5db; }
-
-    footer { padding: 2rem 3rem; text-align: center; font-size: 0.8rem; color: #9ca3af; }
+    form input, form textarea { width: 100%; padding: 0.75rem; margin-top: 1rem; border: none; border-radius: 5px; }
+    form button { margin-top: 1rem; padding: 0.75rem 1.5rem; background: #00f0ff; border: none; color: black; font-weight: bold; border-radius: 5px; }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">SYNTHDATA.AI</div>
+    <div class='logo'>SYNTHDATA.AI</div>
     <nav>
-      <a href="#solutions">Solutions</a>
-      <a href="#platform">Platform</a>
-      <a class="cta" href="#contact">Request a Demo</a>
+      <a href='#about'>About</a>
+      <a href='#use-cases'>Use Cases</a>
+      <a href='#contact'>Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Real-Time Synthetic Data for Critical Environments</h1>
-      <p>Photoreal 3D data and ML pipelines for security, robotics, and defense.</p>
-      <a href="#demo" class="cta-main">See it in Action</a>
+  <section class='hero'>
+    <h1>Real-Time Synthetic Data for Critical Environments</h1>
+    <p>Photoreal 3D data and ML pipelines for security, robotics, and defense.</p>
+    <a href='#use-cases' class='cta-main'>See it in Action</a>
+  </section>
+
+  <section id='about'>
+    <h2>About</h2>
+    <p>We specialize in high-fidelity synthetic data generation and real-time machine learning applications for enterprises, robotics, and public safety environments. Backed by over 25 years in VFX, games, and software development.</p>
+  </section>
+
+  <section id='use-cases'>
+    <h2>Use Cases</h2>
+    <div class='card'>
+      <img src='https://via.placeholder.com/300x180?text=Airport+Security' />
+      <div class='card-content'>
+        <h3>Airport Security</h3>
+        <p>Detecting abnormal behavior through full-body tracking.</p>
+      </div>
+    </div>
+    <div class='card'>
+      <img src='https://via.placeholder.com/300x180?text=Stadium+Monitoring' />
+      <div class='card-content'>
+        <h3>Stadium Monitoring</h3>
+        <p>High-fidelity crowd tracking and behavioral insight.</p>
+      </div>
     </div>
   </section>
 
-  <div class="features">
-    <span>Real-Time</span>
-    <span>Photorealism</span>
-    <span>Proprietary ML</span>
-  </div>
-
-  <section class="use-cases">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180.png?text=Autonomous+Systems" alt="Autonomous Systems">
-      <div class="card-content">
-        <h3>Autonomous Systems</h3>
-        <p>Synthetic data for safe and efficient autonomous navigation.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180.png?text=Robotics" alt="Robotics">
-      <div class="card-content">
-        <h3>Robotics</h3>
-        <p>Enhancing machine learning models for automation.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180.png?text=Surveillance" alt="Surveillance">
-      <div class="card-content">
-        <h3>Surveillance</h3>
-        <p>Precise object detection and tracking in real-time.</p>
-      </div>
-    </div>
+  <section id='contact'>
+    <h2>Contact</h2>
+    <form>
+      <input type='text' placeholder='Your Name' required />
+      <input type='email' placeholder='Your Email' required />
+      <textarea placeholder='Your Message' rows='4' required></textarea>
+      <button type='submit'>Send</button>
+    </form>
+    <p style='margin-top: 1rem;'>Or email us at <a href='mailto:contact@synthdata.net'>contact@synthdata.net</a></p>
   </section>
 
   <footer>
-    &copy; 2025 SynthData.ai — All rights reserved.
+    &copy; 2025 SynthData.net — All rights reserved.
   </footer>
 </body>
 </html>
