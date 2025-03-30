@@ -37,7 +37,7 @@ nav a {
   color: #00f0ff;
 }
 
-/* Hero */
+/* Hero Section with Background */
 .hero.with-bg {
   position: relative;
   display: flex;
@@ -98,7 +98,7 @@ nav a {
   background: #00e0f0;
 }
 
-/* Animation */
+/* Entrance Animation */
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -119,12 +119,11 @@ nav a {
 .hero-text p { animation-delay: 0.3s; }
 .hero-text .cta { animation-delay: 0.5s; }
 
-/* Use Case Pillar Buttons */
+/* Pillars Section with Button Layout */
 .use-cases {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
   gap: 2rem;
   padding: 4rem;
 }
@@ -136,8 +135,7 @@ nav a {
   border-radius: 16px;
   text-align: center;
   padding: 2rem;
-  max-width: 280px;
-  flex: 1 1 220px;
+  width: 260px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
