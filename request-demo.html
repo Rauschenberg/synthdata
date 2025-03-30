@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Demo | SynthData.ai</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      border: none;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    button {
+      background: #00f0ff;
+      color: #0a0f1a;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SYNTHDATA.AI</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="platform.html">Platform</a>
+    </nav>
+  </header>
+
+  <section class="hero-text">
+    <h1>Request a Demo</h1>
+    <p>Let us know how we can help you explore the future of real-time synthetic data. We'll get in touch shortly.</p>
+  </section>
+
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" />
+
+    <label for="industry">Industry</label>
+    <select id="industry" name="industry">
+      <option>Enterprise</option>
+      <option>Robotics</option>
+      <option>Security</option>
+      <option>Defense</option>
+      <option>Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <footer>
+    &copy; 2025 SynthData.net — contact@synthdata.net
+  </footer>
+</body>
+</html>
