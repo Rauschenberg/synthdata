@@ -117,23 +117,31 @@ footer {
 
 .pillar-btn {
   text-decoration: none;
-  color: inherit;
-  background: #1e293b;
+  color: white;
+  background: #111827; /* darker blue-gray */
+  border: 1px solid #1e293b;
   border-radius: 16px;
   text-align: center;
-  padding: 2rem;
-  width: 260px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2rem 1.5rem;
+  width: 240px;
+  max-width: 90%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.pillar-btn:hover {
+  transform: translateY(-5px);
+  background: #1f2f45;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+}
+
 .pillar-btn img {
-  width: 48px;
-  height: 48px;
+  width: 72px;
+  height: auto;
   margin-bottom: 1rem;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .pillar-btn h3 {
@@ -146,18 +154,5 @@ footer {
   color: #cbd5e1;
   font-size: 0.95rem;
   line-height: 1.4;
-}
-
-.pillar-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 16px rgba(0, 240, 255, 0.3);
-}
-
-.pillars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  margin: 0;
 }
