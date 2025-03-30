@@ -156,3 +156,11 @@ footer {
   line-height: 1.4;
   margin: 0;
 }
+
+.pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
