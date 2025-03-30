@@ -70,22 +70,6 @@ nav a {
   display: inline-block;
 }
 
-.badges, .pillars {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem 4rem;
-}
-
-.badge, .pillar {
-  background: #1e293b;
-  padding: 1.5rem 2rem;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 320px;
-}
-
 footer {
   text-align: center;
   color: #94a3b8;
@@ -131,11 +115,41 @@ footer {
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
 }
 
-.pillar {
+.pillar-btn {
+  text-decoration: none;
+  color: inherit;
+  background: #1e293b;
+  border-radius: 16px;
+  text-align: center;
+  padding: 2rem;
+  width: 260px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pillar:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+.pillar-btn img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  opacity: 0.9;
 }
+
+.pillar-btn h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #00f0ff;
+}
+
+.pillar-btn p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.pillar-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(0, 240, 255, 0.3);
+}
+
