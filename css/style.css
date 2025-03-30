@@ -147,3 +147,29 @@ footer {
 .hero-text .cta {
   animation-delay: 0.5s;
 }
+
+.hero.with-bg {
+  position: relative;
+  background: radial-gradient(ellipse at center, rgba(0,240,255,0.1) 0%, transparent 80%),
+              url('../images/wireframe_group.jpg') no-repeat right center;
+  background-size: cover;
+  background-position: 90% center;
+  min-height: 500px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  overflow: hidden;
+}
+
+.hero.with-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10,15,26,0.8); /* subtle dark glass overlay */
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+}
+
