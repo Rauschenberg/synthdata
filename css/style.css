@@ -164,3 +164,40 @@ footer {
   gap: 2rem;
   padding: 4rem 2rem;
 }
+
+.feature-badges {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: rgba(0, 240, 255, 0.7);
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-icon:hover {
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+.feature-label {
+  font-weight: 600;
+}
