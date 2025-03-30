@@ -120,3 +120,14 @@ footer {
 .hero-text .cta {
   animation-delay: 0.5s;
 }
+
+.badge {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.badge:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
