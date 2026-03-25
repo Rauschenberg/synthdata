@@ -1,53 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Use Cases | SynthData.ai</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SYNTHDATA // USE CASES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed": "#002022",
+                        "on-surface-variant": "#b9cacb",
+                        "inverse-on-surface": "#313031",
+                        "tertiary-fixed": "#ffe173",
+                        "on-secondary-fixed-variant": "#064f53",
+                        "primary-container": "#00f2ff",
+                        "outline-variant": "#3a494b",
+                        "on-surface": "#e5e2e3",
+                        "inverse-primary": "#00696f",
+                        "surface-container": "#201f20",
+                        "tertiary": "#fff6e4",
+                        "tertiary-container": "#fed83a",
+                        "surface-dim": "#131314",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#00dbe7",
+                        "on-tertiary-fixed-variant": "#554500",
+                        "surface-container-low": "#1c1b1c",
+                        "surface-tint": "#00dbe7",
+                        "on-primary-fixed-variant": "#004f54",
+                        "surface-variant": "#353436",
+                        "tertiary-fixed-dim": "#e8c423",
+                        "on-background": "#e5e2e3",
+                        "on-secondary": "#00363a",
+                        "surface-container-high": "#2a2a2b",
+                        "on-primary-container": "#006a71",
+                        "on-secondary-container": "#87c2c7",
+                        "primary": "#e1fdff",
+                        "surface-container-highest": "#353436",
+                        "surface-container-lowest": "#0e0e0f",
+                        "error-container": "#93000a",
+                        "background": "#131314",
+                        "inverse-surface": "#e5e2e3",
+                        "on-secondary-fixed": "#002022",
+                        "secondary": "#95d1d6",
+                        "secondary-container": "#0b5156",
+                        "on-tertiary": "#3b2f00",
+                        "error": "#ffb4ab",
+                        "outline": "#849495",
+                        "surface-bright": "#3a393a",
+                        "on-tertiary-container": "#725e00",
+                        "secondary-fixed": "#b1edf2",
+                        "on-error": "#690005",
+                        "on-primary": "#00363a",
+                        "surface": "#131314",
+                        "on-tertiary-fixed": "#221b00",
+                        "primary-fixed": "#74f5ff",
+                        "secondary-fixed-dim": "#95d1d6"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-bg { background-color: #1c1b1c; }
+        .glass-panel { backdrop-filter: blur(12px); }
+    </style>
 </head>
-<body>
-  <header>
-<a href="index.html" class="logo">
-  <img src="images/logo_synthdata.png" alt="SynthData logo" style="height: 40px;">
-</a>
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="solutions.html">Solutions</a>
-  <a href="platform.html">Platform</a>
-  <a href="technology.html">Technology</a>
-  <a href="about.html">About</a>
-  <a href="request-demo.html" class="demo-btn">Request a Demo</a>
-    </nav>
-  </header>
-
-  <section class="hero-text">
-    <h1>Smart Use Cases with Real Impact</h1>
-    <p>SynthData powers AI-driven workflows across industries by offering synthetic datasets optimized for scale, safety, and speed.</p>
-  </section>
-
-  <section class="pillars">
-    <div class="pillar">
-      <h3>Airports</h3>
-      <p>Monitor movement, predict crowd patterns, and detect anomalies using synthetic crowd modeling.</p>
-    </div>
-    <div class="pillar">
-      <h3>Stadiums</h3>
-      <p>Run simulations of evacuation, entry flow, and behavioral mapping under extreme conditions.</p>
-    </div>
-    <div class="pillar">
-      <h3>Autonomous Vehicles</h3>
-      <p>Simulated foot traffic, intersections, and environments for safety validation and object tracking.</p>
-    </div>
-    <div class="pillar">
-      <h3>Warehouse Robotics</h3>
-      <p>Generate datasets for robotic pathfinding, obstacle avoidance, and human-robot coordination.</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 SynthData.net — contact@synthdata.net
-  </footer>
-</body>
-</html>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full border-b border-[#00f2ff]/10 bg-[#131314]/80 backdrop-blur-md z-50 shadow-[0_20px_50px_rgba(0,242,255,0.08)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-none">
+<div class="text-xl font-black tracking-tighter text-[#e5e2e3] uppercase">SYNTHDATA</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-[#849495] hover:text-[#e5e2e3] transition-colors duration-100" href="index.html">Home</a>
+<a class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-[#849495] hover:text-[#e5e2e3] transition-colors duration-100" href="technology.html">Technology</a>
+<a class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-[#00f2ff] border-b-2 border-[#00f2ff] pb-1" href="use-cases.html">Use Cases</a>
+<a class="font-['Inter'] uppercase tracking-widest text-xs font-bold text-[#849495] hover:text-[#e5e2e3] transition-colors duration-100" href="about.html">About</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#00f2ff] cursor-pointer hover:bg-[#00f2ff]/10 p-2 transition-colors">terminal</span>
+<a class="bg-primary-container text-on-primary font-['Inter'] uppercase tracking-widest text-xs font-bold px-4 py-2 hover:scale-95 active:duration-75 transition-transform inline-block" href="request-demo.html">Request Demo</a>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-12">
+<!-- Hero Section -->
+<header class="px-6 md:px-12 py-16 mb-12 border-l-4 border-primary-container bg-surface-container-low">
+<div class="max-w-4xl">
+<span class="font-label text-primary-container text-xs tracking-[0.2em] uppercase mb-4 block">Deployment Architecture // 04 Sectors</span>
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter text-on-surface mb-6 uppercase leading-none">Tactical <br/>Applications</h1>
+<p class="text-outline text-lg max-w-2xl leading-relaxed">Synthetic data environments for mission-critical training, simulation, and predictive analysis in complex high-density domains.</p>
+</div>
+</header>
+<!-- Use Case Grid -->
+<section class="px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 border-y border-outline-variant/20">
+<!-- Case 1: Stadium Operations -->
+<article class="bg-background group p-8 md:p-12 border-outline-variant/10 hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex flex-col h-full">
+<div class="relative w-full aspect-video mb-8 overflow-hidden bg-surface-container">
+<img alt="Stadium security" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" data-alt="CCTV perspective of a massive crowded sports stadium at night with high-contrast digital overlay grids and heatmaps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlhIS2nkJwogQOCpwWOtTsgeAH-xHRVvEARJB38U1ywroHvFYz__2b2upMPlux8usMb2H8cUeMG1MIxEtmg5Yrx9S0-sDUGwYYjqK8kKj3GrSPitoSMaJbpSdWpIHl4tvbbjAK2uLrqmW-wA87IpIE_ACl8qmWCBMp_avkl7oRcuepvX8vm5ezzbiI7t6puzShYurfjjjxwPePgz6YNtIpqAo_LePgsqrRObbi_gs4h7X9J11YXHJfkcPdIP0Zcrxi6E4LYbW72w"/>
+<div class="absolute top-4 left-4 font-label text-[10px] text-primary-container bg-background/80 px-2 py-1 tracking-widest uppercase">STADIUM SECURITY</div>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="w-1 h-12 bg-primary-container"></div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface uppercase mb-2">Stadium Operations Directors</h2>
+<p class="font-label text-[11px] text-outline uppercase tracking-widest mb-4">Tactical Crowd Dynamics</p>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">Critical Challenge</span>
+<p class="text-on-surface leading-snug">Fragmented surveillance makes predicting rapid crowd bottlenecks and edge-case emergencies nearly impossible during live events.</p>
+</div>
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">SynthData Solution</span>
+<p class="text-on-surface leading-snug">Generate 1:1 digital twin simulations to pressure-test evacuation protocols and optimize staff deployment before the first gate opens.</p>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/20 pt-6">
+<span class="font-label text-[10px] text-outline">LAT: 34.0522 N // LON: 118.2437 W</span>
+<span class="material-symbols-outlined text-primary-container text-sm">sensors</span>
+</div>
+</div>
+</article>
+<!-- Case 2: Airport Security -->
+<article class="bg-background group p-8 md:p-12 border-outline-variant/10 hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex flex-col h-full">
+<div class="relative w-full aspect-video mb-8 overflow-hidden bg-surface-container">
+<img alt="Airport security" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" data-alt="Wide shot of a modern airport terminal interior with holographic security tracking vectors and data points on travelers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-VIFsDriEry3tPLcqcbA6T7raALu7p4LqXvURefzdL0gHVMd8eKHVi8FNvV4ltsbORXWcHWUnTJiEWxJlvZkK8K8bHNRDCcFdxg_AP1EG1l0O2f4PO0Oat2tkKdYk5bMvgiih4sP5Ndv-GWmXcedQDRL7ztj26Flm6jTpvsXVJ3YDq08iyCfAomU7Fs3knRCbeKV5hiAsTAuxfXOmN7gdsXsHVadRj20pNNX54r9O2Hl6o1gVjhTgn3xYoBqBG5twu-0Tmul_jA"/>
+<div class="absolute top-4 left-4 font-label text-[10px] text-primary-container bg-background/80 px-2 py-1 tracking-widest uppercase">Sector: Sec_Aviation</div>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="w-1 h-12 bg-primary-container"></div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface uppercase mb-2">Airport Security Leads</h2>
+<p class="font-label text-[11px] text-outline uppercase tracking-widest mb-4">Threat Detection Integrity</p>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">Critical Challenge</span>
+<p class="text-on-surface leading-snug">Restricted access to real-world threat data limits the training efficacy of automated screening and behavior recognition systems.</p>
+</div>
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">SynthData Solution</span>
+<p class="text-on-surface leading-snug">Inject high-fidelity synthetic anomalies into existing feeds to sharpen AI detection rates without compromising passenger privacy or terminal operations.</p>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/20 pt-6">
+<span class="font-label text-[10px] text-outline">ALT: 125FT // HDG: 045</span>
+<span class="material-symbols-outlined text-primary-container text-sm">visibility</span>
+</div>
+</div>
+</article>
+<!-- Case 3: Smart City Planners -->
+<article class="bg-background group p-8 md:p-12 border-outline-variant/10 hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex flex-col h-full">
+<div class="relative w-full aspect-video mb-8 overflow-hidden bg-surface-container">
+<img alt="Smart city grid" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" data-alt="Night drone shot of a metropolitan city intersection with neon blue traffic flow lines and architectural wireframes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTSlK4RlmMEHu0k7ncotq_LeXFZ67GuZcZH_JUuNvCYEu7Z81U8F5yzBheQg8bUKClekZsEo9Nx12BWICXvcOQUpY__oG-qKUEdkNZMds016cnoIh9cySwUanUonJxChZV_3dpFUUoZIf0dYvrdrxGZcS0ZovbkULKzVVKvXagGLwzIeIwIu_oE3R_zHN0TyqmSdC6dc0_Y-DUuUxqIXLotrkwuSH8Hj_VkbZ1waB6JoLJM04KJsHiJE9S5tcV4-VWHOV6-YbaVg"/>
+<div class="absolute top-4 left-4 font-label text-[10px] text-primary-container bg-background/80 px-2 py-1 tracking-widest uppercase">Sector: Urb_Planning</div>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="w-1 h-12 bg-primary-container"></div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface uppercase mb-2">Smart City Planners</h2>
+<p class="font-label text-[11px] text-outline uppercase tracking-widest mb-4">Resilient Urban Design</p>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">Critical Challenge</span>
+<p class="text-on-surface leading-snug">Traditional city modeling fails to account for the chaotic convergence of autonomous vehicles, pedestrians, and infrastructure failures.</p>
+</div>
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">SynthData Solution</span>
+<p class="text-on-surface leading-snug">Model infinite 'What If' scenarios to validate infrastructure resilience and optimize multi-modal traffic flow before physical construction begins.</p>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/20 pt-6">
+<span class="font-label text-[10px] text-outline">NODE: 7A-F2 // STATUS: ACTIVE</span>
+<span class="material-symbols-outlined text-primary-container text-sm">hub</span>
+</div>
+</div>
+</article>
+<!-- Case 4: Law Enforcement -->
+<article class="bg-background group p-8 md:p-12 border-outline-variant/10 hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex flex-col h-full">
+<div class="relative w-full aspect-video mb-8 overflow-hidden bg-surface-container">
+<img alt="Law enforcement command" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-500" data-alt="Low-light view of a tactical command center with multiple monitors showing thermal imaging and urban map overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYUvjqLmS8vCSzTGaUj1s1MgfM7P-tNMGcujwl4j8Pwl8uNwnJXRIuRT65GNDwDm56GgV4X26lR9sWqHmsK8BAtqKs2z7zBjkKQU6m-Bc1nxhjpieTczv_NK-OGAcchv2XycO40NWWPsYs7LQuhWAoerTnyBlyuiMsxLbe6yPYfra-rYhyR4y476U-SKfGttyKpjojYLy3P-Gh5RR0cUybMivZrtISdb0TlQso-rl8TWScViUh-n2y09sdh4DdiYChOydzrpcUWA"/>
+<div class="absolute top-4 left-4 font-label text-[10px] text-primary-container bg-background/80 px-2 py-1 tracking-widest uppercase">Sector: Tac_Enforcement</div>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<div class="w-1 h-12 bg-primary-container"></div>
+<div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface uppercase mb-2">Law Enforcement</h2>
+<p class="font-label text-[11px] text-outline uppercase tracking-widest mb-4">Precision Response Training</p>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">Critical Challenge</span>
+<p class="text-on-surface leading-snug">High-risk tactical training is constrained by physical resource costs and the inability to replicate complex, unpredictable human behaviors safely.</p>
+</div>
+<div>
+<span class="font-label text-[10px] text-primary-fixed-dim block uppercase mb-1">SynthData Solution</span>
+<p class="text-on-surface leading-snug">Utilize procedurally generated VR environments to train officers in de-escalation and situational awareness within hyper-realistic, low-risk digital arenas.</p>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-outline-variant/20 pt-6">
+<span class="font-label text-[10px] text-outline">PROTO: TAC-O4 // LVL: CLASSIFIED</span>
+<span class="material-symbols-outlined text-primary-container text-sm">security</span>
+</div>
+</div>
+</article>
+</section>
+<!-- Technical Specs / Footer CTA -->
+<section class="mt-24 px-6 md:px-12">
+<div class="bg-surface-container p-8 border-l-2 border-primary-container flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<h3 class="text-xl font-bold uppercase text-on-surface mb-2">Ready for deployment?</h3>
+<p class="text-outline text-sm">Our tactical division is available for custom environment integration and private cloud staging.</p>
+</div>
+<button class="bg-transparent border border-primary-container text-primary-container font-label text-xs tracking-widest uppercase px-8 py-4 hover:bg-primary-container/10 transition-colors">
+                    Access Documentation // API
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t-2 border-[#1c1b1c] bg-[#131314]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-6">
+<div class="text-sm font-bold text-[#e5e2e3] uppercase tracking-tighter">SYNTHDATA</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest text-[#849495] hover:text-[#00f2ff] underline-offset-4 hover:underline transition-opacity duration-150" href="#">Contact</a>
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest text-[#849495] hover:text-[#00f2ff] underline-offset-4 hover:underline transition-opacity duration-150" href="#">Status</a>
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest text-[#849495] hover:text-[#00f2ff] underline-offset-4 hover:underline transition-opacity duration-150" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest text-[#849495] hover:text-[#00f2ff] underline-offset-4 hover:underline transition-opacity duration-150" href="#">Security Protocol</a>
+</div>
+<div class="font-['Space_Grotesk'] uppercase text-[10px] tracking-widest text-[#849495]">
+                © 2024 SYNTHDATA // TACTICAL INTELLIGENCE DIVISION
+            </div>
+</div>
+</footer>
+</body></html>
